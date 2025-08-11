@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THUPATI GAGAN — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="left">
+        <img src="photo.jpg" alt="THUPATI GAGAN" class="avatar" />
+      </div>
+      <div class="right">
+        <h1>THUPATI GAGAN</h1>
+        <p class="role">Computer Science & Engineering Student · Web Developer</p>
+        <p class="bio">I design and build simple, clean websites and small web apps. I enjoy learning new technologies and solving problems with code.</p>
+        <div class="links">
+          <a href="mailto:thupati.gagan@gmail.com" class="btn">Email</a>
+          <a href="https://github.com/Jahnavi-01-arc" target="_blank" class="btn outline">GitHub</a>
+          <a href="#" class="btn outline">Resume</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I am a Computer Science & Engineering student (Vel Tech). I build front-end interfaces using HTML, CSS and JavaScript.
+        I also practice backend basics with Node.js / Express and enjoy making projects that help me learn.
+      </p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="proj">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio built with HTML/CSS/JS — this site is a version of that project.</p>
+        </article>
+        <article class="proj">
+          <h3>Number Guessing Game</h3>
+          <p>A simple game demonstrating logic, random numbers and DOM updates.</p>
+        </article>
+        <article class="proj">
+          <h3>WASTE WATER MANAGEMENT USING IOT SENSOR NETWORK</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React (learning)</li><li>Node.js</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>If you want to connect, email me or send a message below.</p>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you — message demo sent!')">
+        <input type="text" name="name" placeholder="THUPATI GAGAN" required />
+        <input type="email" name="email" placeholder="thupati.gagan@gmail.com" required />
+        <textarea name="message" placeholder=" I am a Computer Science & Engineering student (Vel Tech). I build front-end interfaces using HTML, CSS and JavaScript.
+        I also practice backend basics with Node.js / Express and enjoy making projects that help me learn." required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+
+      <p class="small">
+        Email: <a href="mailto:thupati.gagan@gmail.com">thupati.gagan@gmail.com</a> · Phone: +91 7382587905
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="yr"></span> THUPATI GAGAN — Built with ♥</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
